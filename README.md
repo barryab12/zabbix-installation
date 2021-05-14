@@ -7,7 +7,7 @@
 - dpkg -i zabbix-release_5.2-1+ubuntu18.04_all.deb
 - apt update
 - apt install zabbix-server-pgsql zabbix-frontend-php php7.2-pgsql zabbix-nginx-conf zabbix-agent postgresql
-- sudo -u postgres createuser --pwprompt barry
+- sudo -u postgres createuser --pwprompt zabbix
 - sudo -u postgres createdb -O zabbix zabbix
 - zcat /usr/share/doc/zabbix-server-pgsql*/create.sql.gz | sudo -u zabbix psql zabbix
 - nano /etc/zabbix/zabbix_server.conf
